@@ -9,8 +9,8 @@ outer_counter = 0
 while outer_counter < src.length do
   inner_counter = 0
   while inner_counter < src[outer_counter].length do
-    if src[outer_counter][inner_counter] % 2 == 0
-      even_values.push(src[outer_counter][inner_counter])
+    if src[outer_counter][inner_counter].even?
+      p src[outer_counter][inner_counter]
     end
     inner_counter += 1
   end
